@@ -1,4 +1,0 @@
-/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py:68: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:278.)
-  tf = lambda x: torch.FloatTensor(x).to(_dev[0])
-/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py:68: DeprecationWarning: In future, it will be an error for 'np.bool_' scalars to be interpreted as an index
-  tf = lambda x: torch.FloatTensor(x).to(_dev[0])

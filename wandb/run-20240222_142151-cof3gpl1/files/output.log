@@ -1,9 +1,0 @@
-Sequential(
-  (0): Linear(in_features=30, out_features=256, bias=True)
-  (1): LeakyReLU(negative_slope=0.01)
-  (2): Linear(in_features=256, out_features=256, bias=True)
-  (3): LeakyReLU(negative_slope=0.01)
-  (4): Linear(in_features=256, out_features=61, bias=True)
-)
-/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/gfn_fl.py:54: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:278.)
-  tf = lambda x: torch.FloatTensor(x).to(_dev[0])
