@@ -35,7 +35,16 @@ pip install -r requirements.txt
 pip install -r requirements_mols.txt
 ```
 
-You can change `requirements_mols.txt` to match your `CUDA` version by replacing `cu118` by `cuXXX`.
+## For MAC-OS USERS
+
+Due to incompatibility of certain versions of `torch-sparse` and `torch-scatter`. You can run these commands
+
+```sh
+pip install git+https://github.com/rusty1s/pytorch_sparse.git
+pip install torch-scatter -f https://data.pyg.org/whl/torch-2.1.0+${CUDA}.html
+pip --no-cache-dir install torch-geometric
+
+```
 
 ## Hypergrids
 
@@ -67,6 +76,8 @@ To activate learnable backward policy for this setting
 ## Molecules
 
 The presented experiments actively reuse the existing codebase for molecule generation experiments with GFlowNets (https://github.com/GFNOrg/gflownet/tree/subtb/mols).
+
+You can change `requirements_mols.txt` to match your `CUDA` version by replacing `cu118` by `cuXXX`.
 
 Additional requirements for molecule experiments:
 
