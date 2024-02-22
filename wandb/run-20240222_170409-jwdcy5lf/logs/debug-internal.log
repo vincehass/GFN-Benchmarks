@@ -1,0 +1,684 @@
+2024-02-22 17:04:09,823 INFO    StreamThr :18320 [internal.py:wandb_internal():86] W&B internal server running at pid: 18320, started at: 2024-02-22 17:04:09.822427
+2024-02-22 17:04:09,824 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status
+2024-02-22 17:04:09,826 INFO    WriterThread:18320 [datastore.py:open_for_write():87] open: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/run-jwdcy5lf.wandb
+2024-02-22 17:04:09,827 DEBUG   SenderThread:18320 [sender.py:send():382] send: header
+2024-02-22 17:04:09,880 DEBUG   SenderThread:18320 [sender.py:send():382] send: run
+2024-02-22 17:04:10,192 INFO    SenderThread:18320 [dir_watcher.py:__init__():211] watching files in: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files
+2024-02-22 17:04:10,192 INFO    SenderThread:18320 [sender.py:_start_run_threads():1136] run started: jwdcy5lf with start time 1708639449.822955
+2024-02-22 17:04:10,204 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: check_version
+2024-02-22 17:04:10,204 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: check_version
+2024-02-22 17:04:10,340 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: run_start
+2024-02-22 17:04:10,359 DEBUG   HandlerThread:18320 [system_info.py:__init__():27] System info init
+2024-02-22 17:04:10,359 DEBUG   HandlerThread:18320 [system_info.py:__init__():42] System info init done
+2024-02-22 17:04:10,359 INFO    HandlerThread:18320 [system_monitor.py:start():194] Starting system monitor
+2024-02-22 17:04:10,360 INFO    SystemMonitor:18320 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-22 17:04:10,360 INFO    HandlerThread:18320 [system_monitor.py:probe():214] Collecting system info
+2024-02-22 17:04:10,360 DEBUG   HandlerThread:18320 [system_info.py:probe():151] Probing system
+2024-02-22 17:04:10,361 INFO    SystemMonitor:18320 [interfaces.py:start():190] Started cpu monitoring
+2024-02-22 17:04:10,362 INFO    SystemMonitor:18320 [interfaces.py:start():190] Started disk monitoring
+2024-02-22 17:04:10,362 INFO    SystemMonitor:18320 [interfaces.py:start():190] Started memory monitoring
+2024-02-22 17:04:10,363 INFO    SystemMonitor:18320 [interfaces.py:start():190] Started network monitoring
+2024-02-22 17:04:10,376 DEBUG   HandlerThread:18320 [system_info.py:_probe_git():136] Probing git
+2024-02-22 17:04:10,443 DEBUG   HandlerThread:18320 [system_info.py:_probe_git():144] Probing git done
+2024-02-22 17:04:10,443 DEBUG   HandlerThread:18320 [system_info.py:probe():199] Probing system done
+2024-02-22 17:04:10,443 DEBUG   HandlerThread:18320 [system_monitor.py:probe():223] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.10.13', 'heartbeatAt': '2024-02-22T22:04:10.360965', 'startedAt': '2024-02-22T22:04:09.814838', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py', 'codePathLocal': 'src/hypergrid/experiments/SUBT_toy_grid_dag.py', 'codePath': 'src/hypergrid/experiments/SUBT_toy_grid_dag.py', 'git': {'remote': 'https://github.com/vincehass/GFN-Benchmarks.git', 'commit': '2d6341270da426a8a094cd778d52a7e1b89ca2bc'}, 'email': 'nadhir.hassen@polymtl.ca', 'root': '/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks', 'host': '6200L-210250-M.local', 'username': 'nhassen', 'executable': '/Users/nhassen/opt/anaconda3/envs/gflownet-FL/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2400, 'min': 2400, 'max': 2400}, 'cpu_freq_per_core': [{'current': 2400, 'min': 2400, 'max': 2400}], 'disk': {'/': {'total': 460.4317207336426, 'used': 12.544029235839844}}, 'memory': {'total': 16.0}}
+2024-02-22 17:04:10,443 INFO    HandlerThread:18320 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-22 17:04:10,443 INFO    HandlerThread:18320 [system_monitor.py:probe():227] Publishing system info
+2024-02-22 17:04:10,443 DEBUG   HandlerThread:18320 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-22 17:04:11,199 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/conda-environment.yaml
+2024-02-22 17:04:12,747 DEBUG   HandlerThread:18320 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-22 17:04:12,748 INFO    HandlerThread:18320 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-22 17:04:12,751 DEBUG   SenderThread:18320 [sender.py:send():382] send: files
+2024-02-22 17:04:12,751 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-22 17:04:12,756 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-22 17:04:12,756 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: python_packages
+2024-02-22 17:04:12,758 DEBUG   SenderThread:18320 [sender.py:send():382] send: telemetry
+2024-02-22 17:04:12,758 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:04:12,759 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:04:12,759 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:04:12,819 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:04:13,016 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:04:13,016 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:04:13,017 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:04:13,196 INFO    wandb-upload_0:18320 [upload_job.py:push():131] Uploaded file /var/folders/cc/c9ny_j392s36zshkgk0y07100000gn/T/tmpe2jebggywandb/j0tbb898-wandb-metadata.json
+2024-02-22 17:04:13,207 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/conda-environment.yaml
+2024-02-22 17:04:13,207 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:04:13,207 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:13,207 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/requirements.txt
+2024-02-22 17:04:13,207 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-metadata.json
+2024-02-22 17:04:14,833 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:15,212 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:17,214 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:19,221 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:19,911 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:21,225 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:23,229 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:24,963 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:25,239 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:27,250 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:27,762 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:04:27,763 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:04:27,763 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:04:29,260 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:29,964 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:31,266 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:32,059 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:04:32,059 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:04:32,059 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:04:32,061 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:04:32,271 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:04:33,272 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:35,013 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:35,282 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:37,293 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:39,300 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:40,041 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:40,305 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/config.yaml
+2024-02-22 17:04:41,308 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:42,768 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:04:42,768 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:04:42,768 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:04:43,314 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:45,217 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:45,325 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:47,335 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:49,346 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:50,327 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:51,354 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:53,345 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:04:53,346 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:04:53,346 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:04:53,346 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:04:53,359 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:53,359 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:04:55,366 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:55,393 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:04:57,374 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:04:57,772 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:04:57,772 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:04:57,772 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:04:59,385 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:00,431 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:01,394 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:03,400 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:05,411 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:05,452 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:07,421 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:09,432 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:10,368 DEBUG   SystemMonitor:18320 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-22 17:05:10,369 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:05:10,513 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:11,437 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:12,777 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:05:12,778 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:05:12,778 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:05:13,448 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:14,248 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:05:14,249 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:05:14,249 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:05:14,249 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:05:14,453 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:05:15,458 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:15,574 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:17,466 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:19,477 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:20,609 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:21,484 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:23,492 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:25,500 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:25,712 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:27,509 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:27,779 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:05:27,780 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:05:27,781 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:05:29,520 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:30,806 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:31,525 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:33,534 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:35,226 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:05:35,226 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:05:35,227 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:05:35,227 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:05:35,545 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:35,545 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:05:35,902 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:37,553 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:39,564 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:40,374 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:05:40,993 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:41,569 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:42,780 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:05:42,781 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:05:42,781 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:05:43,578 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:45,589 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:46,055 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:47,595 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:49,600 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:51,130 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:51,608 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:53,618 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:55,638 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:56,166 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:05:56,166 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:05:56,167 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:05:56,167 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:05:56,167 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:05:56,643 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:05:57,648 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:05:57,784 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:05:57,784 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:05:57,785 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:05:59,659 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:01,253 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:01,665 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:03,676 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:05,681 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:06,254 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:07,692 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:09,694 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:10,379 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:06:11,295 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:11,705 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:12,789 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:06:12,789 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:06:12,790 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:06:13,716 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:15,726 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:16,306 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:16,887 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:06:16,888 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:06:16,888 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:06:16,890 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:06:17,737 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:17,737 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:06:19,747 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:21,402 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:21,753 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:23,753 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:25,764 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:26,501 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:27,771 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:27,792 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:06:27,792 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:06:27,795 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:06:29,782 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:31,566 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:31,792 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:33,797 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:35,807 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:36,593 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:37,801 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:06:37,802 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:06:37,802 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:06:37,803 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:06:37,818 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:37,818 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:06:39,828 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:40,385 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:06:41,607 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:41,839 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:42,792 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:06:42,793 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:06:42,795 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:06:43,845 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:45,856 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:46,721 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:47,866 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:49,877 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:51,758 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:51,885 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:53,895 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:55,906 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:56,816 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:06:57,797 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:06:57,798 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:06:57,800 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:06:57,917 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:06:58,333 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:06:58,333 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:06:58,334 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:06:58,335 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:06:58,922 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:06:59,926 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:01,878 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:01,937 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:03,947 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:05,958 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:06,885 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:07,968 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:09,974 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:10,390 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:07:11,908 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:11,984 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:12,798 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:07:12,799 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:07:12,805 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:07:13,995 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:16,005 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:16,996 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:18,013 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:19,977 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:07:19,978 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:07:19,978 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:07:19,978 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:07:20,023 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:20,024 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:07:22,032 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:22,034 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:24,040 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:26,047 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:27,085 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:27,803 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:07:27,803 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:07:27,811 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:07:28,056 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:30,067 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:32,077 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:32,184 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:34,085 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:36,091 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:37,244 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:38,099 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:40,105 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:40,395 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:07:42,086 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:07:42,086 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:07:42,086 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:07:42,088 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:07:42,115 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:42,115 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:07:42,313 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:42,808 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:07:42,808 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:07:42,816 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:07:44,126 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:46,136 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:47,367 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:48,143 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:50,149 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:52,159 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:52,392 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:54,167 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:56,177 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:07:57,500 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:07:57,814 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:07:57,814 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:07:57,821 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:07:58,188 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:00,196 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:02,555 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:03,856 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:08:03,856 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:08:03,856 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:08:03,857 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:08:04,209 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:04,210 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:08:06,220 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:07,586 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:08,226 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:10,231 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:10,401 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:08:12,242 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:12,678 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:12,819 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:08:12,819 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:08:12,826 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:08:14,250 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:16,260 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:17,717 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:18,271 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:20,282 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:22,292 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:22,743 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:24,303 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:25,511 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:08:25,512 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:08:25,513 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:08:25,515 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:08:26,308 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:26,309 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:08:27,820 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:27,823 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:08:27,824 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:08:27,830 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:08:28,318 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:30,328 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:32,339 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:32,853 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:34,349 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:36,357 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:37,906 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:38,363 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:40,373 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:40,406 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:08:42,384 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:42,828 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:08:42,828 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:08:42,835 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:08:42,974 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:44,394 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:46,403 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:46,973 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:08:46,973 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:08:46,973 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:08:46,974 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:08:47,408 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:08:48,061 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:48,414 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:50,424 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:52,435 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:53,138 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:08:54,445 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:56,452 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:08:57,831 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:08:57,831 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:08:57,837 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:08:58,460 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:00,469 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:01,910 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:04,490 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:06,491 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:06,986 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:07,636 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:09:07,637 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:09:07,637 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:09:07,637 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:09:08,502 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:08,502 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:09:10,411 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:09:10,511 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:12,073 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:12,519 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:12,835 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:09:12,835 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:09:12,842 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:09:14,529 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:16,539 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:17,119 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:18,545 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:20,555 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:22,121 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:22,561 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:24,569 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:26,579 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:27,195 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:27,840 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:09:27,840 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:09:27,847 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:09:28,589 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:28,831 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:09:28,831 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:09:28,831 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:09:28,832 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:09:29,594 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:09:30,600 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:32,212 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:32,610 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:34,621 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:36,631 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:37,231 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:38,642 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:40,416 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:09:40,653 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:42,274 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:42,663 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:42,845 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:09:42,846 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:09:42,851 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:09:44,674 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:46,681 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:47,352 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:48,688 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:49,387 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:09:49,387 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:09:49,387 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:09:49,388 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:09:49,692 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:09:50,698 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:52,392 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:52,708 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:54,714 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:56,725 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:09:57,433 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:09:57,850 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:09:57,850 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:09:57,856 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:09:58,731 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:00,741 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:02,470 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:02,752 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:04,762 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:06,772 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:07,550 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:08,781 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:09,984 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:10:09,985 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:10:09,985 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:10:09,986 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:10:10,421 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:10:10,792 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:10,792 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:10:12,557 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:12,802 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:12,854 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:10:12,854 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:10:12,857 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:10:14,813 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:16,821 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:17,589 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:18,832 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:20,839 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:22,601 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:22,850 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:24,859 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:26,869 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:27,626 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:27,854 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:10:27,854 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:10:27,861 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:10:28,880 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:30,890 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:31,178 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:10:31,179 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:10:31,179 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:10:31,179 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:10:31,896 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:31,896 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:10:32,691 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:32,901 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:34,911 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:36,920 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:37,767 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:38,930 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:40,427 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:10:40,942 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:42,776 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:42,858 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:10:42,859 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:10:42,866 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:10:42,948 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:44,955 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:46,965 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:47,847 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:48,973 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:50,980 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:52,526 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:10:52,526 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:10:52,526 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:10:52,528 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:10:52,944 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:10:52,991 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:52,991 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:10:53,995 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:54,998 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:57,008 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:10:57,864 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:10:57,864 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:10:57,869 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:10:59,019 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:01,029 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:02,435 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:11:05,047 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:07,058 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:07,447 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:11:09,068 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:10,432 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:11:11,078 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:12,456 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:11:12,869 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-22 17:11:12,869 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: stop_status
+2024-02-22 17:11:12,875 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:11:13,089 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:14,027 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-22 17:11:14,029 DEBUG   SenderThread:18320 [sender.py:send():382] send: history
+2024-02-22 17:11:14,029 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: summary_record
+2024-02-22 17:11:14,030 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:11:14,094 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:11:14,357 DEBUG   SenderThread:18320 [sender.py:send():382] send: exit
+2024-02-22 17:11:14,357 INFO    SenderThread:18320 [sender.py:send_exit():589] handling exit code: 0
+2024-02-22 17:11:14,358 INFO    SenderThread:18320 [sender.py:send_exit():591] handling runtime: 424
+2024-02-22 17:11:14,358 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:11:14,358 INFO    SenderThread:18320 [sender.py:send_exit():597] send defer
+2024-02-22 17:11:14,358 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:14,358 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-22 17:11:14,359 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:14,359 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-22 17:11:14,359 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 1
+2024-02-22 17:11:14,359 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:14,359 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-22 17:11:14,359 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:14,359 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-22 17:11:14,359 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 2
+2024-02-22 17:11:14,359 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:14,359 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-22 17:11:14,359 INFO    HandlerThread:18320 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-22 17:11:14,359 DEBUG   SystemMonitor:18320 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-22 17:11:14,360 INFO    HandlerThread:18320 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-22 17:11:14,360 DEBUG   SystemMonitor:18320 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-22 17:11:14,360 INFO    HandlerThread:18320 [interfaces.py:finish():202] Joined disk monitor
+2024-02-22 17:11:14,360 INFO    HandlerThread:18320 [interfaces.py:finish():202] Joined memory monitor
+2024-02-22 17:11:14,360 INFO    HandlerThread:18320 [interfaces.py:finish():202] Joined network monitor
+2024-02-22 17:11:14,360 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:14,360 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-22 17:11:14,360 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 3
+2024-02-22 17:11:14,361 DEBUG   SenderThread:18320 [sender.py:send():382] send: stats
+2024-02-22 17:11:14,361 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:14,361 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-22 17:11:14,361 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:14,361 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-22 17:11:14,361 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 4
+2024-02-22 17:11:14,361 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:14,361 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-22 17:11:14,361 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:14,361 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-22 17:11:14,361 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 5
+2024-02-22 17:11:14,361 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:14,361 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-22 17:11:14,361 DEBUG   SenderThread:18320 [sender.py:send():382] send: summary
+2024-02-22 17:11:14,362 INFO    SenderThread:18320 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-22 17:11:14,362 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:14,362 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-22 17:11:14,362 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 6
+2024-02-22 17:11:14,362 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:14,362 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-22 17:11:14,362 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:14,362 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-22 17:11:14,362 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 7
+2024-02-22 17:11:14,362 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: status_report
+2024-02-22 17:11:14,362 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:14,362 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-22 17:11:14,362 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:14,362 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-22 17:11:15,101 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:15,101 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:11:15,364 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 17:11:16,108 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:17,115 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:17,969 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 8
+2024-02-22 17:11:17,969 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 17:11:17,969 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:17,970 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-22 17:11:17,970 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:17,970 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-22 17:11:17,970 INFO    SenderThread:18320 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-22 17:11:17,971 INFO    SenderThread:18320 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-02-22 17:11:18,033 INFO    SenderThread:18320 [job_builder.py:build():402] adding wandb-job metadata file
+2024-02-22 17:11:18,037 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 9
+2024-02-22 17:11:18,038 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:18,038 DEBUG   SenderThread:18320 [sender.py:send():382] send: artifact
+2024-02-22 17:11:18,038 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-22 17:11:18,121 INFO    Thread-12 :18320 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:18,378 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 17:11:18,703 INFO    wandb-upload_0:18320 [upload_job.py:push():86] Skipped uploading /Users/nhassen/Library/Application Support/wandb/artifacts/staging/tmpwsss1gtt
+2024-02-22 17:11:19,075 INFO    wandb-upload_1:18320 [upload_job.py:push():89] Uploaded file /Users/nhassen/Library/Application Support/wandb/artifacts/staging/tmp0sf06f7l
+2024-02-22 17:11:20,028 INFO    SenderThread:18320 [sender.py:send_artifact():1494] sent artifact job-https___github.com_vincehass_GFN-Benchmarks.git_src_hypergrid_experiments_SUBT_toy_grid_dag.py - {'id': 'QXJ0aWZhY3Q6NzI5MjEyMzYw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MjE0MzU5MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzI5MjA1OTQ1', 'versionIndex': 1}}}
+2024-02-22 17:11:20,030 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:20,030 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-22 17:11:20,030 INFO    SenderThread:18320 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-22 17:11:20,134 INFO    SenderThread:18320 [dir_watcher.py:finish():388] scan: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files
+2024-02-22 17:11:20,136 INFO    SenderThread:18320 [dir_watcher.py:finish():402] scan save: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/requirements.txt requirements.txt
+2024-02-22 17:11:20,137 INFO    SenderThread:18320 [dir_watcher.py:finish():402] scan save: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log output.log
+2024-02-22 17:11:20,138 INFO    SenderThread:18320 [dir_watcher.py:finish():402] scan save: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/config.yaml config.yaml
+2024-02-22 17:11:20,138 INFO    SenderThread:18320 [dir_watcher.py:finish():402] scan save: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json wandb-summary.json
+2024-02-22 17:11:20,138 INFO    SenderThread:18320 [dir_watcher.py:finish():402] scan save: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/conda-environment.yaml conda-environment.yaml
+2024-02-22 17:11:20,157 INFO    SenderThread:18320 [dir_watcher.py:finish():402] scan save: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-metadata.json wandb-metadata.json
+2024-02-22 17:11:20,157 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 10
+2024-02-22 17:11:20,158 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 17:11:20,159 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:20,164 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-22 17:11:20,165 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:20,165 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-22 17:11:20,165 INFO    SenderThread:18320 [file_pusher.py:finish():172] shutting down file pusher
+2024-02-22 17:11:20,384 INFO    wandb-upload_3:18320 [upload_job.py:push():131] Uploaded file /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/wandb-summary.json
+2024-02-22 17:11:20,385 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 17:11:20,385 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 17:11:20,531 INFO    wandb-upload_2:18320 [upload_job.py:push():131] Uploaded file /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/output.log
+2024-02-22 17:11:20,622 INFO    wandb-upload_4:18320 [upload_job.py:push():131] Uploaded file /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/conda-environment.yaml
+2024-02-22 17:11:20,623 INFO    wandb-upload_0:18320 [upload_job.py:push():131] Uploaded file /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/requirements.txt
+2024-02-22 17:11:20,623 INFO    wandb-upload_1:18320 [upload_job.py:push():131] Uploaded file /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/files/config.yaml
+2024-02-22 17:11:20,829 INFO    Thread-11 (_thread_body):18320 [sender.py:transition_state():617] send defer: 11
+2024-02-22 17:11:20,830 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:20,830 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-22 17:11:20,831 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:20,832 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-22 17:11:20,832 INFO    SenderThread:18320 [file_pusher.py:join():178] waiting for file pusher
+2024-02-22 17:11:20,836 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 12
+2024-02-22 17:11:20,837 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:20,837 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-22 17:11:20,837 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:20,837 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-22 17:11:20,838 INFO    SenderThread:18320 [file_stream.py:finish():595] file stream finish called
+2024-02-22 17:11:21,208 INFO    SenderThread:18320 [file_stream.py:finish():599] file stream finish is done
+2024-02-22 17:11:21,209 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 13
+2024-02-22 17:11:21,211 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:21,211 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-22 17:11:21,212 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:21,213 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-22 17:11:21,213 INFO    SenderThread:18320 [sender.py:transition_state():617] send defer: 14
+2024-02-22 17:11:21,214 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: defer
+2024-02-22 17:11:21,214 DEBUG   SenderThread:18320 [sender.py:send():382] send: final
+2024-02-22 17:11:21,214 INFO    HandlerThread:18320 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-22 17:11:21,214 DEBUG   SenderThread:18320 [sender.py:send():382] send: footer
+2024-02-22 17:11:21,215 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: defer
+2024-02-22 17:11:21,215 INFO    SenderThread:18320 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-22 17:11:21,216 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 17:11:21,217 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-22 17:11:21,217 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: server_info
+2024-02-22 17:11:21,218 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 17:11:21,218 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-22 17:11:21,219 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: poll_exit
+2024-02-22 17:11:21,220 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-22 17:11:21,220 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: server_info
+2024-02-22 17:11:21,221 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-22 17:11:21,229 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: job_info
+2024-02-22 17:11:21,319 DEBUG   SenderThread:18320 [sender.py:send_request():409] send_request: job_info
+2024-02-22 17:11:21,320 INFO    MainThread:18320 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-02-22 17:11:21,322 INFO    MainThread:18320 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-02-22 17:11:21,322 INFO    MainThread:18320 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-02-22 17:11:21,323 DEBUG   HandlerThread:18320 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-22 17:11:21,324 INFO    HandlerThread:18320 [handler.py:finish():869] shutting down handler
+2024-02-22 17:11:22,235 INFO    WriterThread:18320 [datastore.py:close():296] close: /Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/wandb/run-20240222_170409-jwdcy5lf/run-jwdcy5lf.wandb
+2024-02-22 17:11:22,323 INFO    SenderThread:18320 [sender.py:finish():1572] shutting down sender
+2024-02-22 17:11:22,323 INFO    SenderThread:18320 [file_pusher.py:finish():172] shutting down file pusher
+2024-02-22 17:11:22,323 INFO    SenderThread:18320 [file_pusher.py:join():178] waiting for file pusher

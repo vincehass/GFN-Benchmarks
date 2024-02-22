@@ -1,0 +1,56 @@
+  0%|                                                                                                                                                                        | 0/20001 [00:00<?, ?it/s]/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py:68: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:278.)
+  tf = lambda x: torch.FloatTensor(x).to(_dev[0])
+  0%|                                                                                                                                                                | 1/20001 [00:00<39:48,  8.37it/s]/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py:68: DeprecationWarning: In future, it will be an error for 'np.bool_' scalars to be interpreted as an index
+  tf = lambda x: torch.FloatTensor(x).to(_dev[0])
+  1%|▊                                                                                                                                                             | 106/20001 [00:01<06:08, 54.00it/s]
+empirical L1 distance 0.02670380286872387 KL -inf
+
+
+
+
+
+
+
+
+  5%|███████▍                                                                                                                                                      | 934/20001 [00:17<06:29, 48.95it/s]
+empirical L1 distance 0.009059692732989788 KL -0.22287093102931976
+
+
+
+
+
+
+
+
+
+
+
+ 10%|███████████████▌                                                                                                                                             | 1987/20001 [00:40<06:12, 48.41it/s]
+empirical L1 distance 0.0047303056344389915 KL -0.06230572983622551
+
+
+
+
+
+
+
+
+
+
+ 15%|██████████████████████▉                                                                                                                                      | 2915/20001 [00:59<05:51, 48.62it/s]
+empirical L1 distance 0.003185494802892208 KL -0.029581895098090172
+
+
+
+
+
+
+
+
+
+
+
+ 20%|███████████████████████████████                                                                                                                              | 3955/20001 [01:22<05:35, 47.84it/s]
+empirical L1 distance 0.002441982040181756 KL -0.01771477609872818
+
+

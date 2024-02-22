@@ -1,0 +1,11 @@
+argparse
+numpy
+scipy
+tqdm
+torchrl
+tensordict
+torchgfn
+ml-collections==0.1.1
+wandb
+matplotlib
+pandas

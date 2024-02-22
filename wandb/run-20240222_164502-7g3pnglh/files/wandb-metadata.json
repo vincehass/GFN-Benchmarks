@@ -1,0 +1,45 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-02-22T21:45:03.080147",
+    "startedAt": "2024-02-22T21:45:02.024297",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py",
+    "codePathLocal": "src/hypergrid/experiments/SUBT_toy_grid_dag.py",
+    "codePath": "src/hypergrid/experiments/SUBT_toy_grid_dag.py",
+    "git": {
+        "remote": "https://github.com/vincehass/GFN-Benchmarks.git",
+        "commit": "2d6341270da426a8a094cd778d52a7e1b89ca2bc"
+    },
+    "email": "nadhir.hassen@polymtl.ca",
+    "root": "/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks",
+    "host": "6200L-210250-M.local",
+    "username": "nhassen",
+    "executable": "/Users/nhassen/opt/anaconda3/envs/gflownet-FL/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 12.544029235839844
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

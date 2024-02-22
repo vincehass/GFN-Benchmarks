@@ -1,0 +1,25 @@
+empirical L1 distance 0.02612130530178547 KL -inf
+1.67667 3.07066 1.00079
+  0%|                                                                                                                                                                        | 0/20001 [00:00<?, ?it/s]/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py:68: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:278.)
+  tf = lambda x: torch.FloatTensor(x).to(_dev[0])
+  0%|                                                                                                                                                                        | 0/20001 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py", line 765, in <module>
+    main(args)
+  File "/Users/nhassen/Documents/MLOPS/code/gihub/GFN-Benchmarks/src/hypergrid/experiments/SUBT_toy_grid_dag.py", line 748, in main
+    wandb.log({'L1_distance': k1}, {'KL_distance': kl})
+  File "/Users/nhassen/opt/anaconda3/envs/gflownet-FL/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 420, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/nhassen/opt/anaconda3/envs/gflownet-FL/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/Users/nhassen/opt/anaconda3/envs/gflownet-FL/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/nhassen/opt/anaconda3/envs/gflownet-FL/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1828, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/Users/nhassen/opt/anaconda3/envs/gflownet-FL/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1596, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/Users/nhassen/opt/anaconda3/envs/gflownet-FL/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 1468, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/Users/nhassen/opt/anaconda3/envs/gflownet-FL/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 573, in publish_partial_history
+    partial_history.step.num = step
+TypeError: 'dict' object cannot be interpreted as an integer
