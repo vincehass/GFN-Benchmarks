@@ -69,12 +69,7 @@ def main(_):
     is_cuda = general_args.device == 'cuda'
     set_seed(seed, is_cuda=is_cuda)
 
-    use_wandb = len(general_args.wandb_project) > 0
-    if use_wandb:
-        wandb.init(project=general_args.wandb_project, allow_val_change=True)
-        wandb.config.update(general_args, allow_val_change=True)
-        wandb.config.update(env_args, allow_val_change=True)
-        wandb.config.update(algo_args, allow_val_change=True)
+    
 
     env = HyperGrid(
         env_args.ndim, env_args.height,
@@ -84,6 +79,13 @@ def main(_):
 
     env_name = f"{env_args.reward_type}_{env_args.ndim}_{env_args.height}"
     
+    use_wandb = len(general_args.wandb_project) > 0
+    if use_wandb:
+        wandb.init(project=general_args.wandb_project, allow_val_change=True, name=algo_args.name, group=env_name)
+        wandb.config.update(general_args, allow_val_change=True)
+        wandb.config.update(env_args, allow_val_change=True)
+        wandb.config.update(algo_args, allow_val_change=True)
+
     os.makedirs("grid_results", exist_ok=True)  # Create a folder with experiment results
     experiment_name = f"grid_results/{seed}_{env_name}_{algo_args.name}"
     torch.autograd.set_detect_anomaly(True, check_nan=True)
