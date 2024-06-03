@@ -13,21 +13,23 @@ import random
 import os
 import numpy as np
 import torch
-
+import wandb
 
 from gfn.gym import HyperGrid
+from experiments.RL_train_baseline import train_baseline
+from experiments.RL_train_softdqn import train_softdqn
+from experiments.RL_train_sac import train_sac
+from experiments.RL_train_uniform import train_uniform
+from experiments.RL_train_perfect import train_perfect
 
-from experiments.train_softdqn import train_softdqn
-from experiments.train_sac import train_sac
-from experiments.train_uniform import train_uniform
-from experiments.train_perfect import train_perfect
-from experiments.train_baseline import train_baseline
 
 FLAGS = flags.FLAGS
 
 config_flags.DEFINE_config_file("general")
 config_flags.DEFINE_config_file("env")
 config_flags.DEFINE_config_file("algo")
+
+
 
 # List here all train functions
 train_fns = {
@@ -39,7 +41,7 @@ train_fns = {
     'DetailedBalance': train_baseline,
     'SubTrajectoryBalance': train_baseline,
     # Technical
-    'Uniform': train_uniform,
+    # 'Uniform': train_uniform,
     'GroundTruth': train_perfect,
 }
 
@@ -69,10 +71,10 @@ def main(_):
 
     use_wandb = len(general_args.wandb_project) > 0
     if use_wandb:
-        wandb.init(project=general_args.wandb_project)
-        wandb.config.update(general_args)
-        wandb.config.update(env_args)
-        wandb.config.update(algo_args)
+        wandb.init(project=general_args.wandb_project, allow_val_change=True)
+        wandb.config.update(general_args, allow_val_change=True)
+        wandb.config.update(env_args, allow_val_change=True)
+        wandb.config.update(algo_args, allow_val_change=True)
 
     env = HyperGrid(
         env_args.ndim, env_args.height,
