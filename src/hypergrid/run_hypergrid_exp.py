@@ -41,7 +41,7 @@ train_fns = {
     'DetailedBalance': train_baseline,
     'SubTrajectoryBalance': train_baseline,
     # Technical
-    # 'Uniform': train_uniform,
+    'Uniform': train_uniform,
     'GroundTruth': train_perfect,
 }
 
