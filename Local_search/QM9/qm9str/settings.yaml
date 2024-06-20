@@ -60,9 +60,9 @@ sa_hid_dim: 64
 sa_n_layers: 2
 
 # trainer
-num_active_learning_rounds: 5
+num_active_learning_rounds: 200
 num_samples_per_online_batch: 32
-num_samples_per_offline_batch: 16
+num_samples_per_offline_batch: 32
 
 num_steps_per_batch: 1
 num_online_batches_per_round: 1
@@ -74,7 +74,7 @@ explore_epsilon: 0.10
 
 # logging
 saved_models_dir: "saved_models/qm9str/"
-save_every_x_active_rounds: 20
+save_every_x_active_rounds: 50
 
 monitor_num_samples: 128
 monitor_fast_every: 10
